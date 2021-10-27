@@ -1,0 +1,185 @@
+<style>
+    html,
+    body {
+      height: 100vh;
+      width: 100vw;
+      font-size: 62.5%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      word-break: keep-all;
+    }
+  
+    @media screen and (max-width: 480px) {
+      html, body {
+        font-size: 50%;
+      }
+    }
+  
+    :root {
+      --color-default: #e8eaed;
+      --color-invalid: red;
+      --color-valid: #e8eaed;
+    }
+  
+    body {
+      margin: 0;
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    .align-right {
+      width: 319px;
+      margin-left: auto;
+      margin-top: 8px;
+    }
+  
+    @media screen and (max-width: 480px) {
+      .align-right {
+        width: 59%;
+      }
+    }
+  
+    .result-bg {
+      width: 100%;
+      height: 100%;
+      padding-top: 40px;
+      background-color: #f5f6f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: scroll;
+    }
+
+    .result-main {
+      width: 100%;
+      max-width: 480px;
+      height: 576px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 48px 24px 24px 16px;
+    }
+
+    .result-message-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+  
+    @media screen and (max-width: 480px) {
+      .result-bg {
+        padding-top: 0;
+      }
+    }
+  
+  
+    .btn-description {
+      width: 228px;
+      min-height: 42px;
+      font-family: "Apple SD Gothic Neo";
+      font-size: 1.4rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #68686b;
+      margin: 24px auto;
+    }
+  
+  
+    /* form */
+
+
+  
+
+    /* button */
+  
+    .primary-btn {
+      border: none;
+      width: 100%;
+      height: 48px;
+      border-radius: 24px;
+      background-color: #455eef;
+      font-family: "Apple SD Gothic Neo";
+      font-size: 1.6rem;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+    }
+  
+    .form:invalid .primary-btn {
+      background-color: #e8eaed;
+      color: #aaaab1;
+      cursor: not-allowed;
+    }
+  
+  
+    /* footer */
+  
+    .footer {
+      width: 100%;
+      max-width: 480px;
+      margin-top: 32px;
+      margin-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .footer_title {
+      height: 20px;
+      font-family: "Apple SD Gothic Neo";
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      color: #68686b;
+    }
+  
+    .footer_detail {
+      font-family: "Apple SD Gothic Neo";
+      font-size: 1.2rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      color: #68686b;
+    }
+  
+    /* pay button */
+  
+    .btn-box {
+      margin-top: 47px;
+    }
+  
+    /* detail popup */
+  
+    .detail-popup {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 1.4rem;
+      text-align: center;
+      color: #68686b;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  
+    .checkout-end-img {
+      width: 100%;
+      max-width: 480px;
+    }
+  </style>

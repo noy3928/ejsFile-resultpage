@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certify-result</title>
+  </head>
+  <%- include('../styles/resultStyle.ejs') %>
+  <!-- <%- include('../styles/checkoutResultStyle.ejs') %> -->
+
+  <body>
+    <% if(isSuccess){ %>
+    <div class="result-bg">
+      <main class="result-main">
+        <div class="result-message-box">
+          <img
+            src="https://cdn.zeplin.io/60b4513ed9fb1a1104419263/assets/C7FD235E-4BCE-4426-9A8B-E26AE5D189B0.svg"
+            alt="success"
+          />
+          <h2>본인인증에 성공하였습니다.</h2>
+        </div>
+        <div class="btn-box">
+          <p class="btn-description">
+            창을 닫고 인증을 완료해주세요.
+          </p>
+          <button class="primary-btn" onClick="window.close();">돌아가기</button>
+        </div>
+      </main>
+      <img
+        class="result-end-img"
+        src="https://cdn.zeplin.io/60b4513ed9fb1a1104419263/assets/FC0E948E-E32E-4BD0-AA73-EAE6450F20A8.svg"
+        alt="receipt"
+      />
+      <%- include('../partial/footer.ejs') %>
+    </div>
+
+    <% }else{ %>
+
+      <div class="result-bg">
+        <main class="result-main">
+          <div class="result-message-box">
+            <img
+            src="https://cdn.zeplin.io/60b4513ed9fb1a1104419263/assets/625CC925-D489-4910-8E4C-F744C610252D.svg"
+            alt="fail"
+            />
+            <h2>본인인증에 실패하였습니다.</h2>
+          </div>
+          <div class="btn-box">
+            <p class="btn-description">
+              처음부터 다시 시작해주세요.
+            </p>
+            <button class="primary-btn" onClick="window.close();">돌아가기</button>
+          </div>
+        </main>
+        <img
+          class="result-end-img"
+          src="https://cdn.zeplin.io/60b4513ed9fb1a1104419263/assets/FC0E948E-E32E-4BD0-AA73-EAE6450F20A8.svg"
+          alt="receipt"
+        />
+        <%- include('../partial/footer.ejs') %>
+      </div>
+
+    <% } %>
+  </body>
+</html>
